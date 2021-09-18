@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My First JavaScript</h2>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date and time</button>
+    
+    <p id="demo"></p>
+    
+    <h2>What can JavaScript Do?</h2>
+    
+    <p id="demo2">JavaScript can change HTML content.</p>
+    <button type="button"
+    onclick="document.getElementById('demo2').innerHTML = 'Hello JavaScript'">Click me!</button>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript chnage the value of the src (source) attribute of an image.</p>
+    <button
+    onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img src="pic_bulboff.gif" alt="bulb" id="myImage" style="width:100px">
+    <button
+    onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>    
+
+    <p id="demo3">JavaScript can change the style of an HTML element.</p>
+    <button
+    onclick="document.getElementById('demo3').style.fontSize='35px'">Click me bro!</button>
+
+    <p id="demo4">JavaScript can hide HTML elements.</p>
+    <button
+    onclick="document.getElementById('demo4').style.display='none'">Click me!!!</button>
+
+    <!-- From now on I will store my JavaScript in a seperate file -->
+
+    <h2>External JavaScript</h2>
+    <p id="demo5">A Paragraph.</p>
+    <button
+    onclick="myFunction()">Try it</button>
+    <p>(myFunction is stored in an external file called "file.js")</p>
+
+
+    <script src="file.js"></script>
+</body>
+</html>
